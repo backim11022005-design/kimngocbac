@@ -1,0 +1,16 @@
+n = int(input("Nhập số nguyên dương n: "))
+if n < 2:
+    print("Không phải số nguyên tố")
+else:
+    check = True
+    i = 2
+    while i <= n ** 0.5: # Chỉ cần kiểm tra đến căn bậc hai của n
+        if n % i == 0:
+            check = False
+            break
+        i += 1
+    
+    if check:
+        print("Đây là số nguyên tố")
+    else:
+        print("Không phải số nguyên tố")
