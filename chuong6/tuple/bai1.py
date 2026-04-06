@@ -1,0 +1,5 @@
+_tuple = ('a', 'b', 'd', 'e')
+temp_list = list(_tuple)
+temp_list.insert(2, 'c')
+_new_tuple = tuple(temp_list)
+print(_new_tuple)
